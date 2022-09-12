@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Table Element</title>
+    <style>
+        table {
+            width: 1000px;
+        }
+        table, td {
+            border: 2px solid red;
+            border-collapse: collapse;
+            padding: 5px;
+            margin: auto;
+            margin-bottom: 50px;
+        }
+        #tabel1 td:first-child {
+            width: 30%;
+            text-align: center;
+        }
+        #tabel1 td:nth-child(2) {
+            width: 70%;
+            text-align: center;
+        }
+        #tabel1 {
+            background-color: pink;
+        }
+        #tabel2 {
+            background-color: black;
+            color: white;
+        }
+        #tabel3 {
+            background-color: tomato;
+        }
+        #tabel4 {
+            background-color: black;
+            color: green;
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <table id="tabel1">
+        <tr>
+            <td>Baris 1, Kolom 1</td>
+            <td>Baris 1, Kolom 2</td>
+        </tr>
+        <tr>
+            <td colspan="2">Baris 2, Kolom 1 dan 2</td>
+        </tr>
+        <tr>
+            <td>Baris 3, Kolom 1</td>
+            <td>Baris 3, Kolom 2</td>
+        </tr>
+    </table>
+    <table id="tabel2">
+        <tr>
+            <td rowspan="2">Baris 1 dan 2, Kolom 1</td>
+            <td>Baris 1, Kolom 2</td>
+        </tr>
+        <tr>
+            <td>Baris 2, Kolom 2</td>
+        </tr>
+        <tr>
+            <td colspan="2">Baris 3, Kolom 1 dan 2</td>
+        </tr>
+    </table>
+    <table id="tabel3">
+        <tr>
+            <td rowspan="3">Baris 1 2 dan 3, Kolom 1</td>
+            <td>Baris 1, Kolom 2</td>
+        </tr>
+        <tr>
+            <td>Baris 2, Kolom 2</td>
+        </tr>
+        <tr>
+            <td>Baris 3, Kolom 2</td>
+        </tr>
+    </table>
+    <table id="tabel4">
+        <tr>
+            <td rowspan="2">No</td>
+            <td colspan="3">Nilai</td>
+        </tr>
+        <tr>
+            <td style="width: 33%;">DDPPLG</td>
+            <td style="width: 33%;">IPA</td>
+            <td style="width: 33%;">Agama</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>
