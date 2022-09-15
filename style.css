@@ -61,7 +61,7 @@ li a {
 }
 #home::after {
     content: "";
-    background-image: url('../Tugas\ 2/Latihan/img/abstract-computer-circuit-board.jpg');
+    background-image: url('img/abstract-computer-circuit-board.jpg');
     opacity: 0.3;
     top: 0;
     left: 0;
